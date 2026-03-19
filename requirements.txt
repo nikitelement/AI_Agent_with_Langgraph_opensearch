@@ -1,0 +1,32 @@
+# LangGraph and LangChain
+langgraph
+langchain
+langchain-core
+langchain-openai
+langchain-community
+
+# ChromaDB (replaces OpenSearch)
+chromadb
+
+# Streamlit
+streamlit
+streamlit-chat
+
+# Logging
+python-dotenv
+PyYAML
+loguru
+
+# File Processing
+python-docx
+pypdf
+python-multipart
+
+# Utilities
+pydantic
+pydantic-settings
+aiofiles
+
+# For embeddings
+tiktoken
+numpy

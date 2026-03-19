@@ -1,0 +1,28 @@
+chromadb:
+  persist_directory: ./data/chroma_db
+  collection_name: documents
+  embedding_dimension: 1536  # OpenAI ada-002 embedding dimension
+
+llm:
+  provider: openai
+  model: gpt-4
+  temperature: 0.7
+  max_tokens: 2000
+
+agent:
+  max_iterations: 10
+  verbose: true
+  tool_choice: auto
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: logs/app.log
+  max_bytes: 10485760  # 10MB
+  backup_count: 5
+
+streamlit:
+  page_title: "AI Agent with ChromaDB"
+  page_icon: "🤖"
+  layout: wide
+  initial_sidebar_state: expanded
